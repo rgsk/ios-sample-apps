@@ -1,7 +1,20 @@
 import SwiftUI
+
 struct ContentView: View {
+    
     var body: some View {
-        DictionaryView()
+                NavigationStack {
+                    List {
+                        NavigationLink("Dictionary", destination: DictionaryView())
+                        NavigationLink("Exercise Counter", destination: ExerciseCounter())
+                        NavigationLink("Todo App", destination: TodoAppView())
+                        NavigationLink("Tic Tac Toe", destination: TicTacToeView())
+                    }
+                    .padding(.top, 8)
+                    .navigationTitle("My Apps")
+                }
+        
+       
     }
 }
 

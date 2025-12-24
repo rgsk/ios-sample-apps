@@ -78,7 +78,7 @@ struct TodoAppView: View {
                     .font(.system(size: 22))          // ⬅️ BIG text
                     .padding(.vertical, 14)            // ⬅️ BIG height
                     .padding(.horizontal, 18)
-                    .background(Color(hex: "#F89000"))
+                    .background(Color(hex: "#1e1e1e"))
                     .cornerRadius(14)
 
                 Button(action: {
@@ -121,7 +121,7 @@ struct TodoAppView: View {
                     }
                     .padding(.vertical, 8)
                     .listRowBackground(
-                        Color(hex: "#F89000")
+                        Color(hex: "#1e1e1e")
                     )
                 }
                 .onMove(perform: moveTodo)
